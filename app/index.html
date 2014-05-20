@@ -41,9 +41,9 @@
     <script src="bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.min.js"></script>
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/nvd3directives.js"></script>
+   <script src="scripts/app.js"></script>
+    <!-- <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/nvd3directives.js"></script>-->
     <!-- endbuild -->
 
   </head>
@@ -56,18 +56,18 @@
 <!--     <div class="container" ng-view=""></div>
  -->
   <div ng-controller="ExampleCtrl">
-      <nvd3-scatter-chart
-              data="exampleData"
-              id="exampleId"
-              width="1600"
-              height="1300"
-              margin="{left:150,top:100,bottom:100,right:150}"
-              tooltips="true"
-              interactive="true"
-              tooltipContent="tooltipXContentFunction()"
-              shape="getShapeCross()">
-          <svg></svg>
-      </nvd3-scatter-chart>
+    <nvd3-scatter-chart
+      data="exampleData"
+      id="exampleId"
+      width="1200"
+      height="750"
+      margin="{left:150,top:100,bottom:100,right:150}"
+      tooltips="true"
+      interactive="true"
+      tooltipContent="tooltipXContentFunction()"
+      shape="getShapeCircle()">
+      <svg></svg>
+    </nvd3-scatter-chart>
   </div>
 
 
