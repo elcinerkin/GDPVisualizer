@@ -35,8 +35,6 @@
     <script src="bower_components/d3/d3.min.js"></script>
     <script src="bower_components/nvd3/nv.d3.js"></script>
     <script src="bower_components/nvd3/nv.d3.min.js"></script>
-    <script src="bower_components/nvd3/nv.d3.min.js"></script>
-    <script src="bower_components/nvd3/nv.d3.min.js"></script>
     <script src="bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
     <script src="bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.min.js"></script>
 
@@ -48,6 +46,12 @@
 
   </head>
   <body ng-app="friendFinderApp">
+    <input type="button" value="North America" onclick="">
+    <input type="button" value="South America" onclick="">
+    <input type="button" value="Africa" onclick="">
+    <input type="button" value="Europe" onclick="">
+    <input type="button" value="Asia" onclick="">
+    <input type="button" value="Australia" onclick="">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -60,11 +64,12 @@
       data="exampleData"
       id="exampleId"
       width="1200"
-      height="750"
+      height="550"
       margin="{left:150,top:100,bottom:100,right:150}"
       tooltips="true"
       interactive="true"
       tooltipContent="tooltipXContentFunction()"
+      objectEquality="true"
       shape="getShapeCircle()">
       <svg></svg>
     </nvd3-scatter-chart>
